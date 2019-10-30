@@ -1,0 +1,13 @@
+{
+  "name": "fake-authentication",
+  "version": "1.0.0",
+  "description": "A Fake Authentication System Using LocalStorage",
+  "main": "src/index.js",
+  "repository": "https://github.com/KarthikeyanRanasthala/fake-authentication.git",
+  "author": "KarthikeyanRanasthala <karthikeyan.ranasthala@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "uuid": "^3.3.3"
+  }
+}
