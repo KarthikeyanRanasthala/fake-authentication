@@ -6,10 +6,9 @@ A Fake Authentication System Using LocalStorage.
 
 ## Features
 
-- Sign Up
-- Sign In
-- Sign Out
-- Check Authenticated State
+- Handles SignUp, SignIn, SignOut and Persistent Authenticated State
+- Passwords are encrypted with PBKDF2
+- Each user is assigned with an unique id
 
 ## Usage
 
@@ -29,7 +28,7 @@ fakeAuth
 // For SignIn
 fakeAuth
   .signIn("someone@something.com", "password")
-  .then(resp => console.log(resp)) // { message: "SignIn Successful", uid: ""some-uid }
+  .then(resp => console.log(resp)) // { message: "SignIn Successful", uid: "some-uid" }
   .catch(err => console.log(err)); // { message: "Password Did Not Match || User Doesn't Exist" }
 
 // Check AuthState
